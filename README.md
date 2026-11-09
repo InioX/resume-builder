@@ -8,7 +8,7 @@ Then in `src/index.njk` remove the `{% set info = info_example %}` line.
 
 
 <p float="left">
-  <img width="500" src="https://github.com/user-attachments/assets/50cc5f02-6978-4933-8f9c-8dfb71bc3dfd" />
-  <img width="500" src="https://github.com/user-attachments/assets/f584435a-8964-4724-ae3b-5889cbb0b12c" />
+  <img width="300" src="https://github.com/user-attachments/assets/50cc5f02-6978-4933-8f9c-8dfb71bc3dfd" />
+  <img width="300" src="https://github.com/user-attachments/assets/f584435a-8964-4724-ae3b-5889cbb0b12c" />
 </p>
     
