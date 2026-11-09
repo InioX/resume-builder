@@ -1,0 +1,147 @@
+---
+languages:
+  - en
+  - cz
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{% if lang == 'en' %}/index.html{% else %}/{{ lang }}/index.html{% endif %}"
+---
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+</head>
+<body>
+  <div class="cv-page">
+    {% set info = info_example %}
+    <div class="centered">
+      <h1>{{ info.name }}</h1>
+      <div class="row">
+          <p class="subtext">{{ info.city[lang] }}</p>
+          <p class="subtext">•</p>
+          <p class="subtext">{{ info.phone }}</p>
+          <p class="subtext">•</p>
+          <a href="mailto:{{ info.email }}"><p class="subtext">{{ info.email }}</p></a>
+          <p class="subtext">•</p>
+          <a href="{{ info.site }}"><p class="subtext">{{ info.site }}</p></a>
+      </div>
+    </div>
+
+    <h3 class="title">{{ translations.languages[lang] }}</h3>
+    <hr/>
+
+    <div class="cv-row">
+      <span class="cv-title">{{ translations.spoken_languages[lang] }}:</span>
+      <span class="cv-text">{{ info.spoken_languages[lang] }}</span>
+    </div>
+
+    <h3 class="title">{{ translations.programming_skills[lang] }}</h3>
+    <hr/>
+
+    <div class="cv-row">
+      <span class="cv-title">{{ translations.tech_skills[lang] }}:</span>
+      <span class="cv-text">{{ info.tech_skills[lang] }}</span>
+    </div>
+
+    <div class="cv-row">
+      <span class="cv-title">{{ translations.github_profile[lang] }}:</span>
+      <a href="{{ info.github }}"><span class="cv-text">{{ info.github }}</span></a>
+    </div>
+
+    <div class="cv-row">
+      <span class="cv-title">{{ translations.personal_site[lang] }}:</span>
+      <a href="{{ info.site }}"><span class="cv-text">{{ info.site }}</span></a>
+    </div>
+
+    <hr class="thin-hr" />
+
+    <div class="languages-grid">
+      {% for language in info.programming_languages %}
+        <div class="language-item">
+          <span class="language-name">{{ language.name }}</span>
+          <span class="language-stars">{% for i in range(0, language.rating) %}★{% endfor %}{% for i in range(language.rating, 5) %}☆{% endfor %}</span>
+        </div>
+      {% endfor %}
+    </div>
+
+    <h3 class="title">{{ translations.projects[lang] }}</h3>
+    <hr/>
+
+    {% for project in info.projects %}
+      <table>
+        <tr>
+          <td>
+            <p class="job-title">{{ project.name[lang] }}</p>
+            <div class="row">
+              {% for language in project.languages %}
+                <p class="subtext">{{ language }}</p>
+
+                {% if not loop.last %}
+                  <p class="subtext">•</p>
+                {% endif %}
+              {% endfor %}
+            </div>
+            <a href="{{ project.link }}"><span class="subtext">{{ project.link }}</span></a>
+            <hr class="thin-hr" />
+
+            {% for point in project.description[lang] %}
+              <p class="small-text">- {{ point }}</p>
+            {% endfor %}
+          </td>
+          <td>
+            <p class="small-text">{{ project.date.start }}</p>
+          </td>
+        </tr>
+      </table>
+    {% endfor %}
+
+
+    <h3 class="title">{{ translations.education[lang] }}</h3>
+    <hr/>
+
+    {% for school in info.education %}
+      <table>
+        <tr>
+          <td>
+            <p class="job-title">{{ school.name[lang] }}</p>
+            <hr/ class="thin-hr" />
+            <p class="small-text">{{ school.description[lang] }}</p>
+          </td>
+          <td>
+            <p class="small-text">{{ school.city[lang] }}</p>
+            <p class="small-text">{{ school.country[lang] }}</p>
+            <p class="small-text">{{ school.date.start }} - {{ school.date.end }}</p>
+          </td>
+        </tr>
+      </table>
+    {% endfor %}
+
+    <h3 class="title">{{ translations.work_history[lang] }}</h3>
+    <hr/>
+
+    {% for work in info.work_history %}
+      <table>
+        <tr>
+          <td>
+            <p class="job-title">{{ work.name[lang] }}</p>
+            <hr class="thin-hr" />
+            {% for point in work.description[lang] %}
+              <p class="small-text">- {{ point }}</p>
+            {% endfor %}
+          </td>
+          <td>
+            <p class="small-text">{{ work.city[lang] }}</p>
+            <p class="small-text">{{ work.country[lang] }}</p>
+            <p class="small-text">{{ work.date.start }} - {{ work.date.end }}</p>
+          </td>
+        </tr>
+      </table>
+    {% endfor %}
+
+  </div>
+</body>
+</html>

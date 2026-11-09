@@ -1,0 +1,190 @@
+{
+  "name": "Jordan Taylor",
+  "city": { "en": "Toronto, Canada", "cz": "Toronto, Kanada" },
+  "phone": "+1 416 555 0192",
+  "email": "jordan.taylor.dev@example.com",
+  "site": "https://jordan-taylor-cloud.example.com",
+  "github": "https://github.com/example-cloud-dev",
+  "spoken_languages": {
+    "en": "English (Native speaker), French (Professional working proficiency)",
+    "cz": "angličtina (Rodilý mluvčí), francouzština (Profesionální úroveň)"
+  },
+  "tech_skills": {
+    "en": "Docker, Kubernetes, AWS, Terraform, Microservices, PostgreSQL, GraphQL",
+    "cz": "Docker, Kubernetes, AWS, Terraform, Mikroslužby, PostgreSQL, GraphQL"
+  },
+  "programming_languages": [
+    { "name": "TypeScript", "rating": 5 },
+    { "name": "Go", "rating": 4 },
+    { "name": "Python", "rating": 4 },
+    { "name": "Dart", "rating": 3 },
+    { "name": "C#", "rating": 3 },
+    { "name": "SQL", "rating": 4 },
+    { "name": "HTML/CSS", "rating": 4 },
+    { "name": "Bash", "rating": 3 }
+  ],
+  "projects": [
+    {
+      "name": {
+        "cz": "CloudSync Engine",
+        "en": "CloudSync Engine"
+      },
+      "languages": ["Go", "Docker"],
+      "link": "https://github.com/example-cloud-dev/cloudsync",
+      "description": {
+        "cz": [
+          "Vyvinul vysoce výkonnou službu pro synchronizaci souborů v reálném čase napsanou v Go, která využívá WebSockets a distibuované fronty.",
+          "Navrhl architekturu odolnou proti výpadkům s automatickým opakování neúspěšných požadavků a šifrováním dat během přenosu.",
+          "Napsal kompletní dokumentaci API a automatické testy pokrytí s využitím GitHub Actions."
+        ],
+        "en": [
+          "Developed a high-performance real-time file synchronization service in Go using WebSockets and distributed message queues.",
+          "Architected a fault-tolerant system featuring automatic retry logic and end-to-end data encryption in transit.",
+          "Authored complete API documentation and automated test suites integrated into GitHub Actions CI pipelines."
+        ]
+      },
+      "date": {
+        "start": "12/03/2024"
+      }
+    },
+    {
+      "name": {
+        "cz": "DataViz Dashboard",
+        "en": "DataViz Dashboard"
+      },
+      "languages": ["TypeScript", "React", "TailwindCSS", "Next.js"],
+      "link": "https://github.com/example-cloud-dev/dataviz-ui",
+      "description": {
+        "cz": [
+          "Vytvořil interaktivní analytický panel v Reactu a Next.js pro vizualizaci velkých objemů časových řad v reálném čase.",
+          "Optimalizoval vykreslování komponent a snížil počáteční dobu načítání stránky o 45 % díky server-side renderingu.",
+          "Implementoval plnou podporu tmavého režimu a přístupnost podle standardů WCAG 2.1 AA."
+        ],
+        "en": [
+          "Built an interactive analytics dashboard with React and Next.js for visualizing large-scale real-time time-series datasets.",
+          "Optimized component rendering performance, reducing initial page load times by 45% using server-side rendering.",
+          "Implemented comprehensive dark mode support and full WCAG 2.1 AA accessibility compliance."
+        ]
+      },
+      "date": {
+        "start": "18/11/2023"
+      }
+    }
+  ],
+  "education": [
+    {
+      "name": {
+        "cz": "Technologický institut v Torontu",
+        "en": "Toronto Institute of Technology"
+      },
+      "description": {
+        "cz": "Bakalářský titul (B.Sc.) - Počítačové vědy a softwarové inženýrství",
+        "en": "Bachelor of Science (B.Sc.) - Computer Science & Software Engineering"
+      },
+      "city": {
+        "cz": "Toronto",
+        "en": "Toronto"
+      },
+      "country": {
+        "cz": "Kanada",
+        "en": "Canada"
+      },
+      "date": {
+        "start": "2019",
+        "end": "2023"
+      }
+    }
+  ],
+  "work_history": [
+    {
+      "name": {
+        "cz": "Skyline Cloud Networks Services",
+        "en": "Skyline Cloud Networks Services"
+      },
+      "position_title": {
+        "cz": "DevOps Engineer",
+        "en": "DevOps Engineer"
+      },
+      "description": {
+        "cz": [
+          "Správa cloudové infrastruktury na AWS pomocí Terraformu, nasazování mikroslužeb do Kubernetes clusterů a monitorování provozu."
+        ],
+        "en": [
+          "Managed AWS cloud infrastructure using Terraform, deployed microservices to Kubernetes clusters, and monitored system reliability."
+        ]
+      },
+      "city": {
+        "cz": "Toronto",
+        "en": "Toronto"
+      },
+      "country": {
+        "cz": "Kanada",
+        "en": "Canada"
+      },
+      "date": {
+        "start": "15/01/2025",
+        "end": "01/11/2025"
+      }
+    },
+    {
+      "name": {
+        "cz": "Nexus Software Labs",
+        "en": "Nexus Software Labs"
+      },
+      "position_title": {
+        "cz": "Full-Stack Vývojář",
+        "en": "Full-Stack Developer"
+      },
+      "description": {
+        "cz": [
+          "Vývoj webových aplikací v TypeScriptu a Node.js, návrh databázových schémat v PostgreSQL a tvorba RESTful API."
+        ],
+        "en": [
+          "Developed web applications using TypeScript and Node.js, designed PostgreSQL database schemas, and built RESTful APIs."
+        ]
+      },
+      "city": {
+        "cz": "Ottawa",
+        "en": "Ottawa"
+      },
+      "country": {
+        "cz": "Kanada",
+        "en": "Canada"
+      },
+      "date": {
+        "start": "01/06/2023",
+        "end": "20/12/2024"
+      }
+    },
+    {
+      "name": {
+        "cz": "Digital Media Solutions",
+        "en": "Digital Media Solutions"
+      },
+      "position_title": {
+        "cz": "Junior Frontend Vývojář",
+        "en": "Junior Frontend Developer"
+      },
+      "description": {
+        "cz": [
+          "Tvorba responzivních webových stránek pro klienty, oprava chyb v uživatelském rozhraní a spolupráce s UX designéry."
+        ],
+        "en": [
+          "Created responsive websites for clients, fixed UI bugs, and collaborated with UX design teams on interface layouts."
+        ]
+      },
+      "city": {
+        "cz": "Montreal",
+        "en": "Montreal"
+      },
+      "country": {
+        "cz": "Kanada",
+        "en": "Canada"
+      },
+      "date": {
+        "start": "01/05/2022",
+        "end": "30/04/2023"
+      }
+    }
+  ]
+}

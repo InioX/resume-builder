@@ -1,0 +1,38 @@
+{
+  "languages": {
+    "en": "Languages",
+    "cz": "Jazyky"
+  },
+  "spoken_languages": {
+    "en": "Spoken languages",
+    "cz": "Mluvené jazyky"
+  },
+  "programming_skills": {
+    "en": "Programming languages and skills",
+    "cz": "Programovací jazyky a dovednosti"
+  },
+  "tech_skills": {
+    "en": "Technical skills",
+    "cz": "Technické dovednosti"
+  },
+  "github_profile": {
+    "en": "Github profile",
+    "cz": "Profil na GitHubu"
+  },
+  "personal_site": {
+    "en": "Personal site",
+    "cz": "Osobní stránka"
+  },
+  "education": {
+    "en": "Education",
+    "cz": "Vzdělání"
+  },
+  "work_history": {
+    "en": "Work history",
+    "cz": "Pracovní historie"
+  },
+  "projects": {
+    "en": "Projects",
+    "cz": "Projekty"
+  }
+}
